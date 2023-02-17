@@ -1,0 +1,703 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+
+@font-face {
+  font-family: Shabnam;
+  src: url("/font/Shabnam.woff") format("woff"),
+    url("/font/Shabnam.woff2") format("woff2"),
+    url("/font/Shabnam.eot") format("eot");
+}
+
+/* || RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* colors */
+  --PRIMARY-COLOR: #2e9cca;
+  --BODY-BG-COLOR: #25274d;
+  --MAIN-FONT-COLOR: #fff;
+
+  /* fonts */
+  --FONT-FAMILY: shabnam;
+}
+
+/* || GENERAL STYLES */
+
+body {
+  color: var(--MAIN-FONT-COLOR);
+  direction: rtl;
+  background-color: var(--BODY-BG-COLOR);
+  background-size: cover;
+  min-height: 200vh;
+  font-family: var(--FONT-FAMILY);
+  overflow-x: hidden;
+}
+
+div {
+  border: none;
+  outline: none;
+}
+
+/* || TOPNAV */
+
+.topNav {
+  background-color: var(--PRIMARY-COLOR);
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.address_phone {
+  margin-right: 5%;
+  padding: 6px;
+}
+
+.topNav a:any-link {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.topNav :is(a:hover, a:focus) {
+  color: #000;
+  transition: all 0.5s ease;
+}
+
+.topNav .socialMedia {
+  width: 15%;
+  padding: 6px;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+/* || HEADER */
+
+header {
+  display: flex;
+  padding: 2rem;
+  margin-bottom: 0;
+}
+
+/* Brand */
+
+.brand {
+  position: relative;
+  top: -40px;
+  left: -10%;
+}
+
+.brand h1 {
+  font-size: 22px;
+  color: var(--PRIMARY-COLOR);
+  position: relative;
+  margin-top: -23px;
+  left: -16%;
+  font-family: "Source Serif Pro", serif;
+}
+
+.brand h1 span {
+  color: #fff;
+}
+
+/* Nav Menu  */
+
+.navMenu {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navMenu a:any-link {
+  color: var(--MAIN-FONT-COLOR);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 5%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 14px;
+  transition: all 0.4s ease;
+}
+
+.navMenu a:any-link i span {
+  font-family: var(--FONT-FAMILY);
+}
+
+.navMenu :is(a:hover, a:focus) {
+  background-color: var(--PRIMARY-COLOR);
+  color: var(--MAIN-FONT-COLOR);
+  transition: all 0.5s ease;
+}
+
+/* search box */
+
+.searchBox {
+  width: 27%;
+  direction: rtl;
+  margin-right: 20px;
+}
+
+.searchBox input {
+  width: 83%;
+  height: 38px;
+  outline: none;
+  direction: rtl;
+  text-indent: 15px;
+  border-radius: 20px 0 0 20px;
+  font-family: var(--FONT-FAMILY);
+}
+
+.searchIcon {
+  position: relative;
+  top: 2.99px;
+  right: 9px;
+  width: 37px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  height: 38px;
+  border-radius: 0 20px 20px 0;
+  text-decoration: none;
+  background-color: var(--PRIMARY-COLOR);
+}
+
+.searchIcon :hover {
+  color: var(--SECONDARY-COLOR);
+}
+
+.fa-search {
+  color: var(--MAIN-FONT-COLOR);
+}
+
+/* Profile */
+.profile a:any-link {
+  color: var(--MAIN-FONT-COLOR);
+  font-size: 27px;
+  position: relative;
+  top: 9.5px;
+}
+
+.profile :is(a:hover, a:focus) {
+  color: var(--PRIMARY-COLOR);
+}
+
+/* Hiding the menu icon */
+.menu__button {
+  display: none;
+}
+
+/* || CAROUSEL */
+
+.carousel {
+  position: relative;
+  margin-top: -50px;
+  height: 400px;
+  width: 100%;
+}
+
+.carousel__track-container {
+  position: relative;
+  background: steelblue;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel__track {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: transform ease-in 250ms;
+}
+
+.carousel__slide {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+/* Carousel nav */
+
+.carousel__nav {
+  position: relative;
+  direction: ltr;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px 0;
+  top: -25px;
+}
+
+.carousel__indicator {
+  width: 30px;
+  height: 4px;
+  border: 0;
+  border-radius: 13%;
+  background: lightgray;
+  cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+  background: aquamarine;
+}
+
+/* || CAROUSEL SLIDES */
+
+/* Carousel images */
+
+.carousel__img {
+  width: 100vw;
+  height: 100%;
+}
+
+.hide__img {
+  display: none;
+}
+
+/* || MEDIA QUERIES */
+
+/* || Large */
+
+@media screen and (max-width: 1400px) {
+  /* carousel images */
+  .main__carousel__img {
+    display: none;
+  }
+
+  .dekstop__carousel__img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  /* nav menu */
+  .navMenu {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    background-color: var(--PRIMARY-COLOR);
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin: 0;
+  }
+
+  .navMenu a:any-link {
+    transition: all 0.5s ease;
+  }
+
+  .navMenu :is(a:hover, a:focus) {
+    color: var(--BODY-BG-COLOR);
+    font-size: 1.25rem;
+  }
+
+  /* brand and logo */
+
+  .brand {
+    position: absolute;
+    left: 2%;
+    top: 17px;
+  }
+
+  /* search Box */
+  .searchBox {
+    position: absolute;
+    right: 7vw;
+    top: 55px;
+    width: 50%;
+  }
+
+  /* profile icon */
+
+  .profile {
+    position: absolute;
+    right: 5vw;
+    top: 55px;
+  }
+  /* carousel div */
+  .carousel {
+    top: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel {
+    height: 300px;
+  }
+
+  .dekstop__carousel__img {
+    display: none;
+  }
+
+  .medium__carousel__img {
+    display: block;
+  }
+}
+
+/* || MEDIUM */
+
+@media screen and (max-width: 768px) {
+  /* top nav */
+
+  .topNav {
+    height: 25px;
+  }
+
+  .address_phone {
+    font-size: 12px;
+  }
+
+  .address_phone a:any-link {
+    font-size: 12px;
+  }
+
+  .topNav .socialMedia {
+    font-size: 13px;
+    gap: 18px;
+  }
+
+  /* HEADER */
+
+  header {
+    display: block;
+  }
+
+  /* menu button */
+
+  .menu__button {
+    display: block;
+    color: #fff;
+    background-color: transparent;
+    font-size: 2rem;
+    position: absolute;
+    top: 49px;
+    border: none;
+  }
+
+  .menu__button :is(:hover, :focus) {
+    color: var(--PRIMARY-COLOR);
+    cursor: pointer;
+  }
+
+  /* profile icon */
+
+  .profile {
+    right: 11vw;
+    margin: 0 1vw;
+    top: 43px;
+  }
+
+  .fa-user {
+    font-size: 1.5rem;
+  }
+
+  /* carousel */
+
+  .carousel {
+    margin-top: -175px;
+    height: 265px;
+  }
+
+  /* nav menu */
+
+  .hideNav {
+    display: none;
+  }
+
+  .showNav {
+    display: block;
+  }
+
+  .navMenu {
+    height: 350px;
+    background-color: var(--PRIMARY-COLOR);
+    flex-direction: flex-start;
+    gap: 0;
+    padding: 0;
+    z-index: 2;
+  }
+
+  .navMenu a:any-link {
+    justify-content: center;
+    margin: 0;
+    border: 1px solid #000;
+    border-radius: 0;
+    padding: 33px;
+    width: 100%;
+    top: -1px;
+  }
+
+  .navMenu a:any-link:last-child {
+    border-bottom: none;
+  }
+
+  .navMenu :is(a:hover, a:focus) {
+    color: var(--MAIN-FONT-COLOR);
+    background-color: #0a5df6;
+    font-size: 1.25rem;
+    padding: 40px;
+    transition: all 0.5s ease;
+  }
+
+  .navMenu .fa-home {
+    position: relative;
+    right: 4px;
+  }
+
+  .navMenu .fa-shopping-cart {
+    position: relative;
+    right: -5px;
+  }
+
+  .navMenu .fa-exclamation-circle {
+    position: relative;
+    right: -8px;
+  }
+
+  .navMenu .fa-message {
+    position: relative;
+    right: -1px;
+  }
+
+  .navMenu .fa-shopping-bag {
+    position: relative;
+    right: -4px;
+  }
+
+  /* searchBox */
+
+  .searchBox {
+    width: 55%;
+    right: 14vw;
+    top: 50px;
+  }
+
+  .searchBox input {
+    height: 32px;
+  }
+
+  .searchIcon {
+    top: 3px;
+    height: 32px;
+  }
+
+  /* brand and logo */
+
+  .brand {
+    top: 23px;
+  }
+
+  .brand img {
+    width: 120px;
+    height: 80px;
+  }
+
+  .brand h1 {
+    font-size: 18px;
+  }
+
+  /* carousel images */
+
+  .medium__carousel__img {
+    display: none;
+  }
+
+  .tablet__carousel__img {
+    display: block;
+  }
+}
+
+/* || SMALL */
+
+@media screen and (max-width: 600px) {
+  /* top nav */
+
+  .socialMedia {
+    position: relative;
+    left: 1.25rem;
+  }
+
+  /* nav menu */
+
+  .navMenu {
+    top: 200px;
+  }
+
+  /* searchBox */
+  .searchBox {
+    width: 98%;
+    top: 142px;
+    right: 3vw;
+    margin-right: 2rem;
+  }
+
+  .searchBox input {
+    width: 82%;
+  }
+
+  /* carousel */
+  .carousel {
+    margin-top: -135px;
+  }
+
+  /* menu button  */
+
+  .menu__button {
+    top: 43px;
+    right: 4vw;
+    font-size: 2.25rem;
+  }
+
+  /* profile */
+
+  .profile {
+    margin-right: 1rem;
+    top: 135px;
+    right: 1vw;
+  }
+
+  /* brand and logo */
+
+  .brand {
+    position: absolute;
+    top: 17px;
+    right: 38vw;
+  }
+
+  .brand img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .brand h1 {
+    font-size: 1.6rem;
+    left: -15px;
+    margin-top: -25px;
+  }
+
+  /* carousel indicators */
+
+  .carousel__nav {
+    gap: 20px;
+    top: -25px;
+  }
+
+  .carousel__indicator {
+    width: 23px;
+  }
+
+  /* carousel images */
+
+  .tablet__carousel__img {
+    display: none;
+  }
+
+  .mobile__carousel__img {
+    display: block;
+  }
+}
+
+/* || VERY SMALL */
+
+@media screen and (max-width: 500px) {
+  /* header */
+
+  .menu__button {
+    font-size: 2.1rem;
+    top: 42px;
+    right: 4vw;
+  }
+
+  .brand {
+    right: 39vw;
+  }
+
+  .brand img {
+    width: 110px;
+    height: 92px;
+  }
+
+  .brand h1 {
+    font-size: 1.2rem;
+    left: -12px;
+  }
+
+  .fa-user {
+    font-size: 23px;
+  }
+
+  .searchBox {
+    width: 90%;
+    right: 2vw;
+  }
+
+  .searchBox input {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  /* carousel images */
+  .mobile__carousel__img {
+    display: none;
+  }
+
+  .smallMobile__carousel__img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .searchBox {
+    width: 88%;
+    right: 2vw;
+  }
+
+  .searchBox input {
+    width: 80%;
+    height: 30px;
+  }
+
+  .searchIcon {
+    height: 30px;
+  }
+
+  .profile {
+    margin-right: 1rem;
+    top: 135px;
+    right: 1vw;
+  }
+
+  .menu__button {
+    font-size: 1.9rem;
+    top: 43px;
+  }
+
+  .brand {
+    position: absolute;
+    top: 17px;
+    right: 36vw;
+  }
+
+  .carousel {
+    height: 230px;
+  }
+}
