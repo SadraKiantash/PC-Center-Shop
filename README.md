@@ -8,6 +8,7 @@ You can use the project if yo acknowledge the terms of use in <a src="/License.m
 Mohammad Sadra Kiantash
 <hr>
 <h2> Website Images </h2>
+<div style="display:flex">
 <img src="websitePictures/pcCenter1.png" width"220px" height="130px">
 <img src="websitePictures/pcCenter2.png" width"220px" height="130px">
 <img src="websitePictures/pcCenter3.png" width"220px" height="130px">
@@ -15,3 +16,4 @@ Mohammad Sadra Kiantash
 <img src="websitePictures/pcCenter5.png" width"220px" height="130px">
 <img src="websitePictures/pcCenter6.png" width"220px" height="130px">
 <img src="websitePictures/pcCenter7.png" width"220px" height="130px">
+</div>
