@@ -9,7 +9,7 @@ Mohammad Sadra Kiantash
 <hr>
 <h2> Website Images </h2>
 <div style="display: flex; gap: 50px;">
-<img src="websitePictures/pcCenter1.png" width"350px" height="220px">
+<img src="websitePictures/pcCenter1.png" width"350px" height="220px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="websitePictures/pcCenter2.png" width"350px" height="220px">
 <img src="websitePictures/pcCenter3.png" width"350px" height="220px">
 <img src="websitePictures/pcCenter4.png" width"350px" height="220px">
