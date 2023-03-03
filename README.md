@@ -21,7 +21,7 @@ You can use the project if yo acknowledge the terms of use in  <strong> License 
 <img src="websitePictures/pcCenter7.png" width"350px" height="220px">
 </div>
 <hr>
-Project Licence:&nbsp;<a href="Licence.md">PC Center WebStore</a>
+Project License:&nbsp;<a href="License.md">PC Center WebStore</a>
 <hr>
 <h2>Contact Me </h2>
 Gmail:&nbsp;<a href="mailto:sadracoderbusiness@gmail.com">sadracoderbusiness@gmail.com</a>
