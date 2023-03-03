@@ -8,7 +8,7 @@ You can use the project if yo acknowledge the terms of use in <a src="/License.m
 Mohammad Sadra Kiantash
 <hr>
 <h2> Website Images </h2>
-<div style="display:flex; gap:30px;">
+<div style="display: flex; gap: 50px;">
 <img src="websitePictures/pcCenter1.png" width"350px" height="220px">
 <img src="websitePictures/pcCenter2.png" width"350px" height="220px">
 <img src="websitePictures/pcCenter3.png" width"350px" height="220px">
