@@ -10,11 +10,18 @@ Mohammad Sadra Kiantash
 <h2> Website Images </h2>
 <div style="display: flex">
 <img src="websitePictures/pcCenter1.png" width"350px" height="220px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img style="margin-bottom:75px" src="websitePictures/pcCenter2.png" width"350px" height="220px">
+<img src="websitePictures/pcCenter2.png" width"350px" height="220px">
+   <br> <br>
 <img src="websitePictures/pcCenter3.png" width"350px" height="220px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="websitePictures/pcCenter4.png" width"350px" height="220px">
-  <br> <br> <br> <br>
+  <br> <br>
 <img src="websitePictures/pcCenter5.png" width"350px" height="220px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="websitePictures/pcCenter6.png" width"350px" height="220px">
+    <br> <br>
 <img style="margin-right:200px" src="websitePictures/pcCenter7.png" width"350px" height="220px">
 </div>
+<hr>
+<h2>Contact Me </h2>
+Gmail:<a href="mailto:sadracoderbusiness@gmail.com">sadracoderbusiness@gmail.com</a>
+<br>
+telegram:<a href="https://t.me/sadrakian2004">sadrakian2004</a>
