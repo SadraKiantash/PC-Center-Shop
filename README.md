@@ -26,4 +26,4 @@ Project License:&nbsp;<a href="License.md">PC Center WebStore</a>
 <h2>Contact Me </h2>
 Gmail:&nbsp;<a href="mailto:sadracoderbusiness@gmail.com">sadracoderbusiness@gmail.com</a>
 <br>
-telegram:&nbsp;<a href="https://t.me/sadrakian2004">sadrakian2004</a>
+Telegram:&nbsp;<a href="https://t.me/sadrakian2004">sadrakian2004</a>

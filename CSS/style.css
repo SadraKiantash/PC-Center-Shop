@@ -37,6 +37,9 @@
 }
 
 /* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: var(--MAIN-FONT-COLOR);
@@ -538,6 +541,7 @@ header {
   padding: 8px;
   border: none;
   outline: none;
+  resize: none;
 }
 
 #contactUs__message__label {
@@ -660,6 +664,12 @@ header {
   place-content: center;
   border-radius: 50%;
   text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+.footerSocialMedia a:hover {
+  background-color: #dd1c1cdf;
+  transition: all ease 0.5s;
 }
 
 .namad {

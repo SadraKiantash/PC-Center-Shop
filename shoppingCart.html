@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html
+  lang="fa"
+  dir="rtl
+">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سبد خرید</title>
+    <link rel="icon" href="img/Brand.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/17072b3f78.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/shoppingCart.css" />
+  </head>
+
+  <body>
+    <!-- TOP NAV  -->
+    <nav class="topNav">
+      <!-- phone number -->
+      <div class="address_phone">
+        تماس با ما &nbsp; <a href="tel:051-34201383">34201383-051</a>
+      </div>
+      <!-- Social Media links -->
+      <div class="socialMedia">
+        <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href=""> <i class="fa fa-telegram" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        <a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href=""> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      </div>
+    </nav>
+
+    <header>
+      <button class="menu__button">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <!-- PROFILE -->
+      <div class="profile">
+        <a href="/Login-Page/index.html"><i class="fa fa-user"></i></a>
+      </div>
+      <!-- Search Box -->
+      <div class="searchBox">
+        <a href="" class="searchIcon">
+          <i class="fa fa-search" aria-hidden="true"></i
+        ></a>
+        <input type="text" placeholder="جست و جو کنید..." />
+      </div>
+      <!-- MAIN NAV Menu -->
+      <div class="navMenu hideNav">
+        <a href="index.html"
+          ><i class="fa fa-home" aria-hidden="true">
+            <span>&nbsp;صفحه اصلی</span></i
+          ></a
+        >
+        <a href="/index.html#popular-products"
+          ><i class="fa fa-shopping-cart"><span>&nbsp;محصولات</span></i>
+        </a>
+        <a href="shoppingCart__Footer">
+          <i class="fa fa-exclamation-circle" aria-hidden="true"
+            ><span> درباره ما&nbsp; </span></i
+          >
+        </a>
+        <a href="shoppingCart__Footer">
+          <i class="fa fa-message" aria-hidden="true"
+            ><span>&nbsp; تماس با ما</span></i
+          >
+        </a>
+        <a href="/shoppingCart.html">
+          <i class="fa fa-shopping-bag" aria-hidden="true"
+            ><span>&nbsp;سبد خرید</span></i
+          >
+        </a>
+      </div>
+      <!-- Brand logo -->
+      <a href="/index.html" class="brand">
+        <img
+          src="img/Brand.png"
+          alt="PC Center Logo"
+          width="150"
+          height="100" />
+        <h1>PC <span>Center</span></h1>
+      </a>
+    </header>
+    <!-- || MAIN || -->
+    <main>
+      <div class="shoppingCart__products">
+        <div class="shoppingCart__product">
+          <img
+            class="shoppingCart__images"
+            src="/img/products/xboxSeriesX2.png"
+            alt="Xbox Series X"
+            title="Xbox Series X" />
+          <div class="shoppingCart__productInformation">
+            <h3 class="shoppingCart__productTitle">کنسول بازی Xbox Series X</h3>
+            <span class="shoppingCart__delivery"
+              ><i class="fa fa-shipping-fast" aria-hidden="true"></i> تحویل در
+              کمتر از یک هفته</span
+            >
+            <span class="shoppingCart__guarantee"
+              ><i class="fa fa-certificate" aria-hidden="true"></i
+              ><i class="fa fa-check" aria-hidden="true"></i>
+              <span>گارانتی اصالت و سلامت کالا</span></span
+            >
+            <span class="shoppingCart__productPrice"
+              >27,500,000 تومان<button class="shoppingCart__deleteProduct">
+                <i class="fa fa-trash"></i></button
+            ></span>
+          </div>
+        </div>
+        <div class="shoppingCart__product">
+          <img
+            class="shoppingCart__images"
+            src="/img/products/LGMonitor1.png"
+            alt="Xbox Series X"
+            title="Xbox Series X" />
+          <div class="shoppingCart__productInformation">
+            <h3 class="shoppingCart__productTitle">
+              مانیتور گیمینگ ال جی مدل 24GQ50F-B Gaming Monitor
+            </h3>
+            <span class="shoppingCart__delivery"
+              ><i class="fa fa-shipping-fast" aria-hidden="true"></i> تحویل در
+              کمتر از یک هفته</span
+            >
+            <span class="shoppingCart__guarantee"
+              ><i class="fa fa-certificate" aria-hidden="true"></i
+              ><i class="fa fa-check" aria-hidden="true"></i>
+              <span>گارانتی اصالت و سلامت کالا</span></span
+            >
+            <span class="shoppingCart__productPrice"
+              >8,750,000 تومان<button class="shoppingCart__deleteProduct">
+                <i class="fa fa-trash"></i></button
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="shoppingCart__info">
+        <div class="shoppingCart__info2">
+          <div class="shoppingCart__info3">
+            <span>تعداد کالا:</span>
+            <span>مجموع قیمت:</span>
+          </div>
+          <div class="shoppingCart__info3">
+            <span id="shoppingCart__number">2</span>
+            <span id="shoppingCart__price">36,250,000 تومان</span>
+          </div>
+        </div>
+        <button class="shoppingCart__buyButton">ادامه</button>
+      </div>
+    </main>
+    <!-- || FOOTER || -->
+    <footer id="shoppingCart__Footer">
+      <!-- || CONTACT US FORM || -->
+
+      <form class="contact-us">
+        <h3>ارتباط با ما</h3>
+        <p>
+          <label id="contactUs__name__label" for="contactUs__name"
+            >نام و نام خانوادگی:</label
+          >
+          <input name="contactUs__name" id="contactUs__name" type="text" />
+        </p>
+        <p>
+          <label id="contactUs__email__label" for="contactUs__email"
+            >ایمیل:</label
+          >
+          <input name="contactUs__email" id="contactUs__email" type="email" />
+        </p>
+        <p>
+          <label id="contactUs__message__label" for="contactUs__message"
+            >متن پیام:</label
+          >
+          <textarea
+            name="contactUs__message"
+            id="contactUs__message"></textarea>
+        </p>
+        <p class="contactUs__buttons">
+          <button id="contactUs__submitButton" type="submit">ارسال</button>
+          <button id="contactUs__resetButton" type="reset">پاک کردن</button>
+        </p>
+      </form>
+      <!-- FOOTER NAV -->
+
+      <nav class="footer__nav">
+        <h3>فروشگاه PC Center</h3>
+        <ul>
+          <li>
+            <a href="/shoppingCart.html">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i> سبد خرید
+            </a>
+          </li>
+          <li>
+            <a href="/index.html">
+              <i class="fa fa-home" aria-hidden="true"></i> صفحه اصلی
+            </a>
+          </li>
+          <li>
+            <a href="/index.html#popular-products">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i> محصولات
+              فروشگاه
+            </a>
+          </li>
+          <li>
+            <a href="/Login-Page/index.html">
+              <i class="fa fa-sign-in" aria-hidden="true"></i> ورود به حساب
+              کاربری
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- || STORE INFORMATION  || -->
+      <!-- <h3 class="aboutUs">درباره ما</h3> -->
+      <div class="store__info">
+        <div class="footerSocialMedia">
+          <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href=""> <i class="fa fa-telegram" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+          <a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href=""> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <img
+          class="footerBrand"
+          src="/img/brand2.png"
+          alt="PC Center"
+          title="PC Center" />
+        <h3 class="footer__H3"><span>PC</span> Center</h3>
+        <!-- namad -->
+        <div class="namad">
+          <a href="https://enamad.ir/" target="_blank">
+            <img
+              class="eNamad"
+              src="/img/icons/enamad.png"
+              alt="نماد اعتماد الکترونیکی"
+              title="نماد اعتماد الکترونیکی" />
+          </a>
+
+          <a href="https://imenlogo.com/" target="_blank">
+            <img
+              class="eNamad2"
+              src="/img/icons/enamad3.png"
+              alt="نشان ملی ثبت"
+              title="نشان ملی ثبت" />
+          </a>
+          <a href="https://ecunion.ir/" target="_blank">
+            <img
+              class="eNamad3"
+              src="/img/icons/enamad2.png"
+              alt="اتحادیه ملی کسب و کار های مجازی"
+              title="اتحادیه ملی کسب و کار های مجازی" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="copyRight"><span>SadraKiantash</span> &copy;</div>
+  </body>
+</html>

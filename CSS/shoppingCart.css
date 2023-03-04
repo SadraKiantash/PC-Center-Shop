@@ -1,0 +1,150 @@
+/* || GENERAL STYLES || */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* || SHOPPING CART INFORMATION SECTION || */
+.shoppingCart__info {
+  width: 20vw;
+  height: 180px;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+}
+
+.shoppingCart__info2 {
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
+  width: 100%;
+}
+
+.shoppingCart__info3 {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 30px;
+  width: 50%;
+}
+
+.shoppingCart__info3 span {
+  width: 150px;
+}
+
+.shoppingCart__buyButton {
+  width: 220px;
+  height: 35px;
+  background-color: rgb(249, 60, 60);
+  position: relative;
+  top: 40px;
+  right: 30px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+/* || PRODUCTS SECTION || */
+
+.shoppingCart__products {
+  width: 60vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.shoppingCart__product {
+  background-color: #f0f8ff;
+  width: 100%;
+  height: 200px;
+  color: #000;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.shoppingCart__images {
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.shoppingCart__productInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.shoppingCart__productTitle {
+  position: relative;
+  font-size: 16px;
+}
+
+.shoppingCart__productInforation span {
+  font-size: 14px;
+}
+
+.fa-shipping-fast {
+  color: royalblue;
+  position: relative;
+  top: 2px;
+}
+
+.shoppingCart__guarantee .fa-certificate {
+  color: gold;
+  font-size: 18px;
+}
+
+.shoppingCart__guarantee .fa-check {
+  color: #000;
+  font-size: 10px;
+  position: relative;
+  right: -14px;
+  top: -3px;
+}
+
+.shoppingCart__guarantee span {
+  position: relative;
+  top: -2px;
+  right: -10px;
+}
+
+.shoppingCart__productPrice {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.shoppingCart__deleteProduct {
+  border: none;
+  background-color: transparent;
+  color: rgb(245, 88, 88);
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* || FOOTER  || */
+
+#shoppingCart__Footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  /* top: 800px; */
+  margin-top: 100px;
+  width: 100vw;
+  background-color: rgb(58, 114, 234);
+  height: 460px;
+  margin-bottom: none;
+}
+
+.copyRight {
+  position: relative;
+  top: 0;
+}
